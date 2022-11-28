@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*
++ Responsive Design
++ Button to go to top
++ Contact Page
++ Rollen Tabel
++ Home Page Cards fixen
++ Animations
++ Hovers
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/* Modifier Classes */
+.fill {
+	background: #6b728e;
+}
+
+.inverted {
+	border: 1px solid #6b728e;
+}
+
+.flex {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	gap: 2em;
+	flex-direction: row;
+}
+
+/* Site Start */
+
+.site-container {
+	background: #292a37;
+	min-height: 100vh;
+	width: 100%;
+	color: white;
+	position: relative;
+	background-size: cover;
+	/* padding-left: 8%;
+    padding-right: 8%; */
+	box-sizing: border-box;
+}
+
+/* Navigationbar And Footer */
+.navbar,
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #474e68;
+}
+
+.navbar {
+	border-radius: 0px 0px 59px 59px;
+	padding: 0rem 10rem;
+
+	font-family: "Patua One", cursive;
+	filter: drop-shadow(0px 22px 15px rgba(0, 0, 0, 0.25));
+}
+
+.logo {
+	width: 6.5rem;
+	cursor: pointer;
+}
+
+.logo:hover {
+	animation: spin 200ms ease-in-out;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(180);
+	}
+}
+
+nav {
+	display: flex;
+	text-align: right;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+
+	gap: 4rem;
+}
+
+.nav-links {
+	text-decoration: none;
+	color: white;
+	font-size: 1.25em;
+}
+
+.menu-icon {
+	width: 2rem;
+	cursor: pointer;
+	display: none;
+}
+
+footer {
+	filter: drop-shadow(17px -12px 15px rgba(0, 0, 0, 0.25));
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 600;
+	padding: 1em;
+}
+
+.socials-container {
+	text-align: center;
+}
+
+.socials {
+	margin: 1em 0;
+}
+
+h2 {
+	margin-bottom: 1em;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.copyright {
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	color: rgba(226, 225, 225, 0.72);
+}
+
+.footer-nav {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.footer-nav li a {
+	color: rgba(226, 225, 225, 0.72);
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+/* General Styling */
+h1 {
+	color: white;
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 5em;
+	line-height: 102.5%;
+
+	color: #ffffff;
+	/* background-color: red; */
+	text-align: center;
+}
+
+.page-title {
+	margin: 7rem 0;
+}
+
+h2 {
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 102.5%;
+	text-align: center;
+}
+
+p {
+	color: white;
+	/* background-color: green; */
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 183%;
+
+	text-align: left;
+	display: inline-block;
+	margin-top: 2rem;
+
+	/* padding: 0 20px; */
+}
+
+h5 {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+	
+
+
+/* Content Styling */
+
+.banner {
+	/* background-color: blue; */
+	display: block;
+	padding: 8rem 0;
+}
+
+.banner-content {
+	/* background-color: red; */
+	text-align: center;
+	/* min-width: 25rem; */
+	margin: auto 24rem;
+}
+
+.banner-title {
+	text-align: left;
+	display: inline-block;
+	/* background-color: green;; */
+	align-items: center;
+	/* text-align: center; */
+}
+
+.banner-button-container {
+	display: flex;
+	/* background-color: green; */
+	margin: 5% 0;
+	gap: 2em;
+	justify-content: center;
+	text-align: center;
+}
+
+.banner-button {
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 600;
+	width: 100%;
+	font-size: 20px;
+	padding: 1.2em 0;
+	border-radius: 112px;
+	outline: none;
+	color: white;
+	margin: 30px 0;
+	font-family: "Arial Narrow Bold", sans-serif;
+}
+
+.card-section {
+	margin-bottom: 4rem;
+}
+
+.card {
+	width: 300px;
+	margin: 10px 15px;
+	height: 380px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	text-align: center;
+	background: #d9d9d9;
+	border-radius: 30px;
+}
+
+/* Verschil tussen LL en SLB */
+.ll-container,.waaromslb-container,.belangrijk-container,.begeleiding-container,.wat-is-slb-container {
+	flex-basis: 100%;
+	padding: 3rem;
+	margin: 1rem 9rem;
+}
+
+.ll-text-container,.waaromslb-text-container,.belangrijk-text-container,.begleiding-text-container,.slb-text-container {
+	width: 50%;
+}
+
+.ll-image {
+	width: 50%;
+	background-image: url(../Images/wat_is_ll.jpeg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 15px;
+	margin-top: 2rem;
+}
+
+.verschil-container {
+	flex-basis: 100%;
+	padding: 3rem;
+	margin: 1rem 9rem;
+}
+
+.verschil-image {
+	width: 50%;
+	background-image: url(../Images/verschil_tussen_slb_en_ll.jpeg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 15px;
+	margin-top: 2rem;
+
+}
+
+.verschil-text-container {
+	width: 50%;
+}
+
+/* SLB binnen Natin ICT */
+.waaromslb-image{
+	width: 50%;
+	background-image: url(../Images/waarom_slb_natin.jpeg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	margin-top: 2rem;
+
+}
+
+.belangrijk-image{
+	width: 100%;
+	height: 23rem;
+	background-image: url(../Images/belangrijk.jpeg);
+	background-position: center;
+	background-size: contain; 
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	margin-top: 2rem;
+
+
+}
+
+.slb-content-cont {
+	margin-top: 5rem;
+}
+
+.begeleiding-text-container {
+	width: 50%;
+}
+
+
+.begeleiding-image{
+	width: 50%;
+	background-image: url(../Images/begeleiding.jpeg);
+	background-position: center;
+	background-size: contain; 
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	margin-top: 2rem;
+	
+}
+
+.slb-image {
+	
+	
+	width: 50%;
+	background-image: url(../images/wat_is_slb.jpeg);
+	background-position: center;
+	background-size: contain; 
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	margin-top: 2rem;
+}
+
+.rollen-container {
+	background: green;
+	padding: 10em 0;
+	margin: 5rem;
+}
+
+
